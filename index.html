@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ankit Kumar — Software Engineer specializing in microservices, Node.js, and machine learning. Currently building reliable distributed systems at Celigo.">
+  <meta name="keywords" content="Ankit Kumar, Software Engineer, Portfolio, Node.js, Microservices, Machine Learning, Full Stack Developer">
+  <meta name="author" content="Ankit Kumar">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ankit Kumar | Software Engineer">
+  <meta property="og:description" content="Building reliable distributed systems. 500+ DSA problems solved. Production microservice experience at Celigo.">
+  <meta property="og:url" content="https://ankitkumar.dev">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ankit Kumar | Software Engineer">
+  <meta name="twitter:description" content="Building reliable distributed systems. 500+ DSA problems solved.">
+
+  <title>Ankit Kumar — Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+
+  <!-- ==================== MOBILE OVERLAY ==================== -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo" aria-label="Ankit Kumar - Home">
+        A<span>K</span>
+      </a>
+
+      <div class="navbar__links" id="nav-links">
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#experience" class="navbar__link">Experience</a>
+        <a href="#projects" class="navbar__link">Projects</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#achievements" class="navbar__link">Achievements</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </div>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-toggle__icon">☀️</span>
+        </button>
+        <div class="navbar__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <p class="hero__greeting">👋 Hi, my name is</p>
+            <h1 class="hero__name">Ankit Kumar</h1>
+            <p class="hero__tagline">
+              <strong>Software Engineer</strong> who builds reliable distributed systems.
+              I reduce crashes, migrate microservices, and solve hard problems at
+              <strong>Celigo</strong>.
+            </p>
+
+            <div class="hero__cta">
+              <a href="#projects" class="btn btn--primary">
+                <span>View My Work</span>
+                <span>↓</span>
+              </a>
+              <a href="./assets/resume/Ankit_Kumar_Resume.pdf" download class="btn btn--secondary">
+                <span>📄</span>
+                <span>Download Resume</span>
+              </a>
+            </div>
+
+            <div class="hero__socials">
+              <a href="https://github.com/ak76kumar/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/ankit-kumar-032458227/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="https://leetcode.com/u/ak76_chhonkar/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LeetCode Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+              </a>
+              <a href="https://www.codechef.com/users/ak_coder03" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="CodeChef Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.257.004C8.47.07 6.702 1.395 5.819 2.777c-.637 1-2.089 4.848-2.539 8.964-.17 1.553.156 3.473.887 4.632.696 1.105 2.079 2.407 3.658 2.734 1.056.218 2.141-.12 2.927-.543.666-.356 2.128-.903 3.268-.908 1.16.005 2.602.552 3.267.908.787.423 1.872.761 2.928.543 1.579-.327 2.962-1.629 3.657-2.734.731-1.16 1.057-3.079.888-4.632-.45-4.116-1.902-7.965-2.54-8.964C21.337 1.395 19.57.069 16.783.004c-1.09.017-2.065.365-3.194.99-.146.1-.396.107-.57.005C11.883.375 10.908.019 11.257.004z"/></svg>
+              </a>
+              <a href="https://www.geeksforgeeks.org/profile/ankitchhonkar03?tab=activity" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GeeksforGeeks Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.45 14.315c-.143.28-.334.532-.565.745a3.691 3.691 0 0 1-1.104.695 4.51 4.51 0 0 1-3.116-.016 3.79 3.79 0 0 1-2.135-2.078 3.571 3.571 0 0 1-.16-.677h3.195a.46.46 0 0 0 .321-.124.453.453 0 0 0 .134-.317V11.5a.46.46 0 0 0-.134-.317.46.46 0 0 0-.321-.124h-3.262a3.796 3.796 0 0 1 .34-1.013 3.79 3.79 0 0 1 1.994-1.745 4.51 4.51 0 0 1 3.164.036 3.691 3.691 0 0 1 1.644 1.264.46.46 0 0 0 .382.183h1.368a.46.46 0 0 0 .44-.606 5.845 5.845 0 0 0-1.381-2.097A5.57 5.57 0 0 0 20.2 5.886a6.503 6.503 0 0 0-4.453.021A5.57 5.57 0 0 0 13.4 7.852a5.3 5.3 0 0 0-.592 1.206h-.672a5.3 5.3 0 0 0-.592-1.206 5.57 5.57 0 0 0-2.348-1.945 6.503 6.503 0 0 0-4.453-.021A5.57 5.57 0 0 0 2.4 7.08a5.845 5.845 0 0 0-1.38 2.097.46.46 0 0 0 .44.606h1.367a.46.46 0 0 0 .382-.183 3.691 3.691 0 0 1 1.644-1.264 4.51 4.51 0 0 1 3.164-.036 3.79 3.79 0 0 1 1.994 1.745c.163.315.277.655.34 1.013H7.088a.46.46 0 0 0-.321.124.453.453 0 0 0-.134.317v1.043c0 .12.048.234.134.317a.46.46 0 0 0 .321.124h3.195a3.571 3.571 0 0 1-.16.677 3.79 3.79 0 0 1-2.135 2.078 4.51 4.51 0 0 1-3.116.016 3.691 3.691 0 0 1-1.104-.695 3.427 3.427 0 0 1-.565-.745.46.46 0 0 0-.404-.241H1.45a.46.46 0 0 0-.44.606 5.845 5.845 0 0 0 1.381 2.097A5.57 5.57 0 0 0 4.74 18.16a6.503 6.503 0 0 0 4.453-.021 5.57 5.57 0 0 0 2.348-1.945c.268-.38.474-.8.612-1.243h.634c.138.443.344.862.612 1.243a5.57 5.57 0 0 0 2.348 1.945 6.503 6.503 0 0 0 4.453.021 5.57 5.57 0 0 0 2.348-1.194 5.845 5.845 0 0 0 1.38-2.097.46.46 0 0 0-.44-.606h-1.368a.46.46 0 0 0-.404.241z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__terminal-wrapper">
+            <div class="terminal">
+              <div class="terminal__header">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+                <span class="terminal__title">~/ankit-kumar</span>
+              </div>
+              <div class="terminal__body" id="terminal-body">
+                <!-- Terminal content typed by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building Systems That Don't Break at 3 AM</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__photo-wrapper reveal">
+            <div class="about__photo-glow"></div>
+            <!-- Replace with your actual photo -->
+            <div class="about__photo" style="background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white;">AK</div>
+          </div>
+
+          <div class="about__bio reveal reveal--delay-1">
+            <p>
+              I'm a <strong>Software Engineer at Celigo</strong> where I stabilize production microservices serving enterprise customers. My work on identifying and resolving critical system-level bugs <strong>reduced service crashes by 60%</strong>. I design migration strategies across 7+ services with comprehensive test coverage, and I'm the person they call when something is stuck in production.
+            </p>
+            <p>
+              Before Celigo, I built data pipelines at <strong>Piramal Finance</strong>, automated Snowflake-to-S3 archiving (cutting costs by 25%), and trained ML models that hit <strong>99% prediction accuracy</strong>. I've solved <strong>500+ competitive programming problems</strong> because great engineering starts with great problem-solving fundamentals.
+            </p>
+
+            <blockquote class="about__quote">
+              "I build systems for humans first, scale second."
+            </blockquote>
+
+            <div class="about__facts">
+              <div class="about__fact">
+                <span class="about__fact-icon">📍</span>
+                <span>Bharatpur, India</span>
+              </div>
+              <div class="about__fact">
+                <span class="about__fact-icon">🎓</span>
+                <span>MANIT Bhopal — CGPA 8.84</span>
+              </div>
+              <div class="about__fact">
+                <span class="about__fact-icon">💼</span>
+                <span>1+ Years Experience</span>
+              </div>
+              <div class="about__fact">
+                <span class="about__fact-icon">🏆</span>
+                <span>Ace of the Month @ Celigo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Experience</span>
+          <h2 class="section-title">Where I've Built Things</h2>
+          <p class="section-subtitle">From production microservices to data pipelines — each role sharpened a different edge.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <!-- Celigo — SWE I -->
+          <article class="timeline__item timeline__item--current">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__company">Celigo</h3>
+                  <p class="timeline__role">Software Engineer I</p>
+                  <p class="timeline__location">📍 Remote / Hyderabad, Telangana</p>
+                </div>
+                <span class="timeline__date">
+                  <time datetime="2025-02">Feb 2025</time> — Present
+                </span>
+              </div>
+              <div class="timeline__bullets">
+                <p class="timeline__bullet">Reduced service crashes by 60% by identifying and resolving critical system-level uncaught bugs across production microservices.</p>
+                <p class="timeline__bullet">Designed and implemented new default flags for microservice migration, updating 7+ services with 4+ flag combinations and comprehensive Jest unit test coverage.</p>
+                <p class="timeline__bullet">Stabilizing core microservices by resolving customer escalations, investigating complex issues, and fixing critical stuck bugs in production.</p>
+              </div>
+              <div class="badges-list">
+                <span class="badge">Node.js</span>
+                <span class="badge">Docker</span>
+                <span class="badge">Kafka</span>
+                <span class="badge">Jest</span>
+                <span class="badge">Redis</span>
+                <span class="badge">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Celigo — Intern -->
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__company">Celigo</h3>
+                  <p class="timeline__role">Software Engineer Intern</p>
+                  <p class="timeline__location">📍 Hyderabad, Telangana</p>
+                </div>
+                <span class="timeline__date">
+                  <time datetime="2024-08">Aug 2024</time> — <time datetime="2025-01">Jan 2025</time>
+                </span>
+              </div>
+              <div class="timeline__bullets">
+                <p class="timeline__bullet">Researched and executed Node.js version migration, addressing deprecated changes while ensuring backward compatibility for 10+ core services.</p>
+                <p class="timeline__bullet">Stabilized Jenkins CI/CD pipeline failures, improving build success rate up to 90% and unblocking team deployments.</p>
+              </div>
+              <div class="badges-list">
+                <span class="badge">Node.js</span>
+                <span class="badge">Jenkins</span>
+                <span class="badge">CI/CD</span>
+                <span class="badge">Git</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Piramal Finance -->
+          <article class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__company">Piramal Finance</h3>
+                  <p class="timeline__role">Data Engineer Intern</p>
+                  <p class="timeline__location">📍 Mumbai, Maharashtra</p>
+                </div>
+                <span class="timeline__date">
+                  <time datetime="2023-05">May 2023</time> — <time datetime="2023-07">Jul 2023</time>
+                </span>
+              </div>
+              <div class="timeline__bullets">
+                <p class="timeline__bullet">Collaborated with data warehouse team to develop and deploy a robust data visualization solution, leveraging Power BI and NLP techniques for enhanced user experience.</p>
+                <p class="timeline__bullet">Automated Snowflake DB to AWS S3 archiving process using SQL & JavaScript, reducing infrastructure cost by 25%.</p>
+              </div>
+              <div class="badges-list">
+                <span class="badge">Snowflake</span>
+                <span class="badge">AWS S3</span>
+                <span class="badge">Power BI</span>
+                <span class="badge">SQL</span>
+                <span class="badge">NLP</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Things I've Built</h2>
+          <p class="section-subtitle">From ML pipelines to full-stack web applications — each project solves a real problem.</p>
+        </div>
+
+        <div class="projects-grid stagger-children">
+          <!-- Project 1: Fake News Detection -->
+          <div class="project-card" id="project-fake-news">
+            <div class="card-shine"></div>
+            <div class="project-card__image-wrapper">
+              <div class="project-card__image" style="background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca); display: flex; align-items: center; justify-content: center; height: 220px;">
+                <div style="text-align: center; color: #c7d2fe; padding: 20px;">
+                  <div style="font-size: 3rem; margin-bottom: 8px;">🔍</div>
+                  <div style="font-family: var(--font-mono); font-size: 0.85rem; opacity: 0.8;">NLP · Classification · Deep Learning</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Fake News Detection</h3>
+              <p class="project-card__desc">
+                NLP-powered pipeline that classifies misinformation using multiple ML and deep learning models. Compared Logistic Regression, Decision Tree, and LSTM-RNN — the recurrent architecture outperformed by capturing sequential text patterns.
+              </p>
+              <span class="project-card__metric">✓ 95.07% Accuracy</span>
+              <div class="project-card__footer">
+                <div class="badges-list">
+                  <span class="badge">Python</span>
+                  <span class="badge">LSTM-RNN</span>
+                  <span class="badge">NLP</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Soil Analysis -->
+          <div class="project-card" id="project-soil-analysis">
+            <div class="card-shine"></div>
+            <div class="project-card__image-wrapper">
+              <div class="project-card__image" style="background: linear-gradient(135deg, #14532d, #166534, #15803d); display: flex; align-items: center; justify-content: center; height: 220px;">
+                <div style="text-align: center; color: #bbf7d0; padding: 20px;">
+                  <div style="font-size: 3rem; margin-bottom: 8px;">🌱</div>
+                  <div style="font-family: var(--font-mono); font-size: 0.85rem; opacity: 0.8;">ML · Flask · Web Application</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Soil Analysis & Crop Recommendation</h3>
+              <p class="project-card__desc">
+                Full-stack ML web application that predicts optimal crops and fertilizer levels from soil parameters. Built with Flask backend serving trained models on a dataset of 22 crop types.
+              </p>
+              <span class="project-card__metric">✓ 99.09% Accuracy</span>
+              <div class="project-card__footer">
+                <div class="badges-list">
+                  <span class="badge">Python</span>
+                  <span class="badge">Flask</span>
+                  <span class="badge">ML</span>
+                  <span class="badge">HTML/CSS</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    Code
+                  </a>
+                  <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Portfolio Website -->
+          <div class="project-card" id="project-portfolio">
+            <div class="card-shine"></div>
+            <div class="project-card__image-wrapper">
+              <div class="project-card__image" style="background: linear-gradient(135deg, #1e1b4b, #581c87, #7e22ce); display: flex; align-items: center; justify-content: center; height: 220px;">
+                <div style="text-align: center; color: #e9d5ff; padding: 20px;">
+                  <div style="font-size: 3rem; margin-bottom: 8px;">💼</div>
+                  <div style="font-family: var(--font-mono); font-size: 0.85rem; opacity: 0.8;">Vanilla JS · CSS3 · Responsive</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Portfolio Website</h3>
+              <p class="project-card__desc">
+                This website — hand-coded with zero frameworks. Features a terminal typing animation, 3D tilt cards, animated scroll counters, dark/light theming, and full responsive design. Pure HTML/CSS/JS craftsmanship.
+              </p>
+              <span class="project-card__metric">✓ Zero Dependencies</span>
+              <div class="project-card__footer">
+                <div class="badges-list">
+                  <span class="badge">HTML5</span>
+                  <span class="badge">CSS3</span>
+                  <span class="badge">JavaScript</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    Code
+                  </a>
+                  <a href="#home" class="project-card__link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Coming Soon placeholder -->
+          <div class="project-card" id="project-coming-soon" style="opacity: 0.6;">
+            <div class="card-shine"></div>
+            <div class="project-card__image-wrapper">
+              <div class="project-card__image" style="background: linear-gradient(135deg, #1c1917, #292524, #44403c); display: flex; align-items: center; justify-content: center; height: 220px;">
+                <div style="text-align: center; color: #a8a29e; padding: 20px;">
+                  <div style="font-size: 3rem; margin-bottom: 8px;">🚀</div>
+                  <div style="font-family: var(--font-mono); font-size: 0.85rem; opacity: 0.8;">Coming Soon</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Node.js Microservice Project</h3>
+              <p class="project-card__desc">
+                A backend-focused project showcasing real-time architecture with WebSockets, message queues, and containerized deployment. Coming soon — connecting my production experience to open-source code.
+              </p>
+              <div class="project-card__footer">
+                <div class="badges-list">
+                  <span class="badge">Node.js</span>
+                  <span class="badge">Docker</span>
+                  <span class="badge">Redis</span>
+                </div>
+                <div class="project-card__links">
+                  <span class="project-card__link" style="cursor: default; opacity: 0.5;">In Progress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">Technologies I Work With</h2>
+          <p class="section-subtitle">From low-level algorithms to production infrastructure — tools I use daily and tools I've shipped with.</p>
+        </div>
+
+        <div class="skills-grid stagger-children">
+          <!-- Languages -->
+          <div class="skill-category">
+            <div class="skill-category__icon">⌨️</div>
+            <h3 class="skill-category__title">Languages</h3>
+            <div class="skill-category__items">
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">C/C++</span>
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">HTML5</span>
+              <span class="skill-chip">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Backend & Runtime -->
+          <div class="skill-category">
+            <div class="skill-category__icon">⚙️</div>
+            <h3 class="skill-category__title">Backend & Runtime</h3>
+            <div class="skill-category__items">
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">Express.js</span>
+              <span class="skill-chip">Flask</span>
+              <span class="skill-chip">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category">
+            <div class="skill-category__icon">🗄️</div>
+            <h3 class="skill-category__title">Databases</h3>
+            <div class="skill-category__items">
+              <span class="skill-chip">MongoDB</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">Snowflake</span>
+              <span class="skill-chip">Redis</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div class="skill-category">
+            <div class="skill-category__icon">🛠️</div>
+            <h3 class="skill-category__title">DevOps & Tools</h3>
+            <div class="skill-category__items">
+              <span class="skill-chip">Docker</span>
+              <span class="skill-chip">Kafka</span>
+              <span class="skill-chip">Git & GitHub</span>
+              <span class="skill-chip">Jenkins</span>
+              <span class="skill-chip">AWS S3</span>
+              <span class="skill-chip">Splunk</span>
+              <span class="skill-chip">Postman</span>
+            </div>
+          </div>
+
+          <!-- ML & Data -->
+          <div class="skill-category">
+            <div class="skill-category__icon">🧠</div>
+            <h3 class="skill-category__title">ML & Data Science</h3>
+            <div class="skill-category__items">
+              <span class="skill-chip">scikit-learn</span>
+              <span class="skill-chip">NLP</span>
+              <span class="skill-chip">LSTM/RNN</span>
+              <span class="skill-chip">Power BI</span>
+              <span class="skill-chip">Google Colab</span>
+            </div>
+          </div>
+
+          <!-- CS Fundamentals -->
+          <div class="skill-category">
+            <div class="skill-category__icon">📚</div>
+            <h3 class="skill-category__title">CS Fundamentals</h3>
+            <div class="skill-category__items">
+              <span class="skill-chip">DSA</span>
+              <span class="skill-chip">OOP</span>
+              <span class="skill-chip">DBMS</span>
+              <span class="skill-chip">Operating Systems</span>
+              <span class="skill-chip">Computer Networks</span>
+              <span class="skill-chip">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== ACHIEVEMENTS ==================== -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Achievements</span>
+          <h2 class="section-title">Numbers That Tell My Story</h2>
+        </div>
+
+        <!-- Stat Counter Cards -->
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="stat-label">Problems Solved</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="114" data-suffix="">0</span>
+            <span class="stat-label">Best Global Rank</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="700" data-suffix="+">0</span>
+            <span class="stat-label">GFG Score</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="40" data-suffix="+">0</span>
+            <span class="stat-label">Contests Attended</span>
+          </div>
+        </div>
+
+        <!-- Achievement List -->
+        <div class="achievements-list reveal">
+          <div class="achievement-item">
+            <span class="achievement-icon">🏆</span>
+            <p class="achievement-text">
+              Got <strong>Ace of the Month</strong> award for exceptional work on Node.js version migration at Celigo.
+            </p>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">💻</span>
+            <p class="achievement-text">
+              Solved <strong>500+ DSA questions</strong> on LeetCode and scored <strong>700+ points</strong> on GeeksforGeeks.
+            </p>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">🥇</span>
+            <p class="achievement-text">
+              Scored <strong>114 global rank (Max)</strong> in CodeChef contest — top 0.1% of participants.
+            </p>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">⚡</span>
+            <p class="achievement-text">
+              Attended <strong>40+ coding contests</strong> on Codeforces and CodeChef, consistently improving problem-solving speed and accuracy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="section-subtitle">I'm always open to discussing new projects, opportunities, or just talking tech.</p>
+        </div>
+
+        <div class="contact__grid reveal">
+          <div class="contact__info">
+            <h3>Get In Touch</h3>
+            <p>
+              Whether you have a question, want to collaborate, or just want to say hi — my inbox is always open. I'll get back to you as soon as I can.
+            </p>
+
+            <div class="contact__links">
+              <a href="mailto:ankitchhonkar03@gmail.com" class="contact__link-item">
+                <span class="contact__link-icon">📧</span>
+                <span>ankitchhonkar03@gmail.com</span>
+              </a>
+              <a href="tel:+917425863911" class="contact__link-item">
+                <span class="contact__link-icon">📱</span>
+                <span>+91-7425863911</span>
+              </a>
+              <a href="https://github.com/ak76kumar/" target="_blank" rel="noopener noreferrer" class="contact__link-item">
+                <span class="contact__link-icon">🐙</span>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/ankit-kumar-032458227/" target="_blank" rel="noopener noreferrer" class="contact__link-item">
+                <span class="contact__link-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://leetcode.com/u/ak76_chhonkar/" target="_blank" rel="noopener noreferrer" class="contact__link-item">
+                <span class="contact__link-icon">💡</span>
+                <span>LeetCode</span>
+              </a>
+              <a href="https://www.geeksforgeeks.org/profile/ankitchhonkar03" target="_blank" rel="noopener noreferrer" class="contact__link-item">
+                <span class="contact__link-icon">📗</span>
+                <span>GeeksforGeeks</span>
+              </a>
+            </div>
+
+            <div class="contact__status">
+              <span class="contact__status-dot"></span>
+              <span>Open to opportunities</span>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Your message..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form-submit">
+              <span>Send Message</span>
+              <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Designed & Built by <span>Ankit Kumar</span> · © 2025
+      </p>
+      <p class="footer__text" style="margin-top: 4px; font-family: var(--font-mono);">
+        Vanilla HTML · CSS · JavaScript — Zero Frameworks
+      </p>
+      <div class="footer__links">
+        <a href="https://github.com/ak76kumar/" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+        <a href="https://www.linkedin.com/in/ankit-kumar-032458227/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://leetcode.com/u/ak76_chhonkar/" target="_blank" rel="noopener noreferrer" class="footer__link">LeetCode</a>
+        <a href="https://www.codechef.com/users/ak_coder03" target="_blank" rel="noopener noreferrer" class="footer__link">CodeChef</a>
+        <a href="https://www.geeksforgeeks.org/profile/ankitchhonkar03" target="_blank" rel="noopener noreferrer" class="footer__link">GFG</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
