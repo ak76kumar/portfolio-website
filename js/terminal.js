@@ -10,7 +10,7 @@ export function initTerminal() {
     { prompt: '$ whoami', output: 'Ankit Kumar' },
     { prompt: '$ cat role.txt', output: 'Software Engineer I @ Celigo' },
     { prompt: '$ echo $PASSION', output: 'Building reliable distributed systems' },
-    { prompt: '$ ls skills/', output: 'node.js  python  docker  kafka  redis  sql' },
+    { prompt: '$ ls skills/', output: 'node.js  docker  kafka  redis  microservices  system-design' },
   ];
 
   let lineIndex = 0;
